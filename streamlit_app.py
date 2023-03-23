@@ -33,7 +33,7 @@ streamlit.header("Fruity Fruit Advice")
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
-
+additional_fruit = streamlit.text_input('What fruit would you like to add','users Fruit')
 streamlit.stop()
 
 
@@ -46,6 +46,6 @@ streamlit.dataframe(my_data_row)
 
 ###  Sounds like awe are adding 
 
-additional_fruit = streamlit.text_input('What fruit would you like to add','users Fruit')
+
 streamlit.write('The user entered ', additional_fruit)
 my_cur.execute("insert into fruit_load_list values ('from streamlit1')")
