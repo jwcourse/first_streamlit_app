@@ -39,3 +39,8 @@ my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.header("Hello from Snowflake:")
 streamlit.dataframe(my_data_row)
+
+###  Sounds like awe are adding 
+
+additional_fruit = streamlit.text_input('What fruit would you like to add','users Fruit')
+
